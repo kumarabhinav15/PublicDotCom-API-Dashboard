@@ -155,7 +155,17 @@ npm run prisma:migrate
 1) Replace local single-user mode with real authentication
 2) Add risk controls (max order size, symbol allowlists, two-person rule)
 3) Add rate limiting and circuit breakers for upstream failures
->>>>>>> 607fdb0 (Initial commit of existing code)
->>>>>>>
+
 <img width="1752" height="1117" alt="Image" src="https://github.com/user-attachments/assets/5cc0c3c3-4d9f-41fb-ac48-7bda47750de3" />
 
+<img width="1752" height="1117" alt="Image" src="https://github.com/user-attachments/assets/1236609c-51be-47fd-9555-f9b4f9f7a848" />
+
+<img width="1752" height="1117" alt="Image" src="https://github.com/user-attachments/assets/fa456b29-35f8-4c2d-8f0e-856f7c29c87d" />
+
+<img width="1752" height="1117" alt="Image" src="https://github.com/user-attachments/assets/6848e843-f38e-467f-a492-6165558bb246" />
+
+<img width="1752" height="1117" alt="Image" src="https://github.com/user-attachments/assets/92f95dab-d126-48d6-8a2b-e1b4e2fa1804" />
+
+<img width="1752" height="1117" alt="Image" src="https://github.com/user-attachments/assets/d2595114-8439-4bfa-bbe4-9f3484144c96" />
+
+<img width="1752" height="1117" alt="Image" src="https://github.com/user-attachments/assets/a312427c-7e69-4d6f-8105-2e422f0f2a20" />

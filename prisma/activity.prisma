@@ -1,0 +1,13 @@
+model ActivityEvent {
+  id          String   @id
+  accountId   String
+  type        String
+  timestamp   DateTime
+  description String
+  symbol      String?
+  side        String?
+  quantity    Int?
+  price       Float?
+  status      String?
+  amount      Float?
+}

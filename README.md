@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Public Dashboard
 A **financial activity dashboard** that provides clear visibility into brokerage account activity — including trades, dividends, fees, and cash movement — in a single, easy-to-understand interface.
 
@@ -60,3 +61,98 @@ npx prisma migrate dev --name init
 npm run dev
 
 Open browser to: http://localhost:3000
+=======
+# Public Dashboard Starter (Next.js + TypeScript)
+
+This repo is a **mock-first** starter for building an investment monitoring dashboard powered by the **Public.com Trading API**.
+
+It ships with:
+- Next.js 14 (App Router) + TypeScript
+- TanStack Query for polling/caching
+- Tailwind CSS for fast UI iteration
+- Server-side Public API proxy routes (accounts, portfolio, quotes, options expirations/chain/greeks, history)
+- Prisma + SQLite for watchlists, preferences, audit logs, and order tracking
+- Order Blotter page (Public open orders + locally tracked submissions)
+- Optional trading endpoints (preflight/place/status/cancel) behind strict safety gates
+- A safe default **MOCK mode** so you can run the UI without any keys
+
+## Quick start (mock mode)
+
+1) Install
+
+```bash
+npm install
+```
+
+2) Configure env
+
+```bash
+cp .env.example .env.local
+```
+
+3) Run
+
+```bash
+npm run dev
+```
+
+Open: http://localhost:3000
+
+## Initialize the database (recommended)
+
+This repo uses SQLite by default.
+
+```bash
+npm run prisma:migrate
+```
+
+## Enable live Public API calls (optional)
+
+1) Edit `.env.local`:
+
+- Set `MOCK_PUBLIC_API=false`
+- Set `PUBLIC_SECRET_TOKEN=...`
+
+2) Restart `npm run dev`
+
+### Important
+- The secret token **must never** be exposed to the browser.
+- Trading is **off by default**. To enable it, you must:
+  1) set `ENABLE_TRADING=true` on the server
+  2) enable trading in the Settings page (DB toggle)
+  3) if `TRADING_UNLOCK_CODE` is set, store the matching unlock code locally in Settings
+
+## Implemented proxy routes
+
+- `GET /api/public/accounts`
+- `GET /api/public/portfolio?accountId=`
+- `POST /api/public/quotes?accountId=`
+- `POST /api/public/options/expirations?accountId=`
+- `POST /api/public/options/chain?accountId=`
+- `GET /api/public/options/greeks?accountId=&osiSymbols=`
+- `POST /api/public/options/greeks` (batched; body: `{ accountId, osiSymbols: string[] }`)
+- `GET /api/public/history?accountId=&start=&end=&pageSize=&nextToken=`
+
+### Trading routes (gated)
+
+- `POST /api/public/orders/preflight/single`
+- `POST /api/public/orders/preflight/multi`
+- `POST /api/public/orders/place`
+- `GET /api/public/orders/status?accountId=&orderId=`
+- `DELETE /api/public/orders/cancel?accountId=&orderId=`
+
+### App routes (DB-backed)
+
+- `GET/POST /api/watchlists`
+- `DELETE /api/watchlists/[watchlistId]`
+- `POST/DELETE /api/watchlists/[watchlistId]/items`
+- `GET/POST /api/prefs`
+- `GET /api/audit?limit=`
+- `GET /api/order-tracking?limit=&accountId=`
+
+## Next steps
+
+1) Replace local single-user mode with real authentication
+2) Add risk controls (max order size, symbol allowlists, two-person rule)
+3) Add rate limiting and circuit breakers for upstream failures
+>>>>>>> 607fdb0 (Initial commit of existing code)

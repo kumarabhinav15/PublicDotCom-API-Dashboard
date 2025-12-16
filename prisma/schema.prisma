@@ -1,0 +1,83 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+
+  watchlists Watchlist[]
+
+  preferences   UserPreference?
+  auditLogs     AuditLog[]
+  orderTracking OrderTracking[]
+}
+
+model UserPreference {
+  userId         String  @id
+  tradingEnabled Boolean @default(false)
+  defaultAccountId String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id])
+}
+
+model Watchlist {
+  id        String   @id @default(uuid())
+  userId    String
+  name      String
+  createdAt DateTime @default(now())
+
+  user      User      @relation(fields: [userId], references: [id])
+  items     WatchlistItem[]
+}
+
+model WatchlistItem {
+  id          String @id @default(uuid())
+  watchlistId String
+  symbol      String
+  type        String
+  sortOrder   Int    @default(0)
+  notes       String?
+
+  watchlist   Watchlist @relation(fields: [watchlistId], references: [id])
+
+  @@index([watchlistId])
+  @@unique([watchlistId, symbol, type])
+}
+
+model AuditLog {
+  id        String   @id @default(uuid())
+  userId    String
+  eventType String
+  payload   String?
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@index([userId, createdAt])
+}
+
+model OrderTracking {
+  id        String   @id @default(uuid())
+  userId    String
+  accountId String
+  orderId   String
+  status    String
+  payload   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@index([userId, createdAt])
+  @@index([accountId, createdAt])
+  @@unique([accountId, orderId])
+}

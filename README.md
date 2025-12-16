@@ -38,3 +38,25 @@ The dashboard is designed for **safety, transparency, and scalability**. It aggr
 ## Design Philosophy
 This project intentionally separates **data ingestion**, **persistence**, **analytics**, and **presentation**.  
 By storing immutable activity events and deriving analytics dynamically, the system remains flexible, auditable, and easy to extend — including support for additional broker integrations in the future.
+
+---
+
+## Getting Started
+This project is designed to run locally with minimal setup and no external dependencies.
+
+### Prerequisites
+- Node.js 18+
+- npm
+- Git
+
+### Local Setup
+Clone the repository:
+
+```bash
+git clone https://github.com/<your-username>/public-dashboard.git
+cd public-dashboard
+npm install
+npx prisma migrate dev --name init
+npm run dev
+
+Open browser to: **http://localhost:3000**

@@ -59,4 +59,4 @@ npm install
 npx prisma migrate dev --name init
 npm run dev
 
-Open browser to: **http://localhost:3000**
+Open browser to: http://localhost:3000

